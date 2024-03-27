@@ -6,9 +6,7 @@ async function getUser({userId}: {userId: string}) {
 
   if(!res.ok) throw new Error('failed to fetch user ')
 
-  return (
-    <div>getUser</div>
-  )
+  return res.json()
 }
 
 export default getUser

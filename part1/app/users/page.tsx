@@ -9,7 +9,6 @@ export default async function UsersPage() {
   const gottenUsers = await users
 
   const content = (
-    
       <section className='min-h-screen'>
         {
           gottenUsers.map(user => {
@@ -20,10 +19,8 @@ export default async function UsersPage() {
             </p>)
           })
         }
-      </section>
-    
+      </section> 
   )
-
 
   return content
 }

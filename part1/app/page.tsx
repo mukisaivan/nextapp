@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center m-5 p-24">
+    <main className="flex min-h-screen flex-col items-center m-5 p-24 h-screen">
       <Link href={'/about'}>
         <button className='text-2xl m-5 rounded-xl p-4 bg-red-600'>Go to About Page</button>
       </Link>

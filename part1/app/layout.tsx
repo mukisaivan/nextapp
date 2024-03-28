@@ -17,10 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body >
+      <body>
         <header className='bg-slate-400 top-0 h-20 sticky flex items-center justify-center'> Header Section</header> 
           
-        <main className='p-7'>
+        <main className='p-7 min-h-screen'>
           {children}  
         </main>
         <footer className='bg-slate-400 bottom-0 h-20 sticky flex items-center justify-center'>Footer</footer>

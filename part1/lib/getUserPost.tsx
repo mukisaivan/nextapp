@@ -4,7 +4,7 @@ async function getUserPost(userId: string) {
     { next: { revalidate: 60 } }
   );
 
-  if (!res.ok) throw new Error('Failed to fetch data');
+  if (!res.ok) return undefined
 
   return res.json();
 }

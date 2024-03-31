@@ -22,7 +22,7 @@ export default function RootLayout({
         <main className='p-7'>
           {children}  
         </main>
-        <footer className='bg-slate-400 bottom-0 h-20 sticky flex items-center justify-center'>Footer</footer>
+        {/* <footer className='bg-slate-400 bottom-0 h-20 sticky flex items-center justify-center'>Footer</footer> */}
       </body>
     </html>
   );

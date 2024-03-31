@@ -12,15 +12,11 @@ export const metaData: Metadata = {
 export default function RootLayoutForSmallProject({children}: {children: React.ReactNode}) {
   return (
     <html lang='en'>
-      <head />
       <body>
         <SpNavbar />
-        <main className='min-h-screen bg-slate-800'>
-          {children}
-        </main>
+        {children}
         <SpFooter/>
       </body>
-      <footer/>
     </html>
   )
 }

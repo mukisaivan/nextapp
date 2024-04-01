@@ -11,12 +11,10 @@ export const metaData: Metadata = {
 
 export default function RootLayoutForSmallProject({children}: {children: React.ReactNode}) {
   return (
-    <html lang='en'>
-      <body>
-        <SpNavbar />
-        {children}
-        <SpFooter/>
-      </body>
-    </html>
+    <>
+      <SpNavbar />
+      {children}
+      <SpFooter/>
+    </>
   )
 }

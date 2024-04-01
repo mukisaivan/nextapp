@@ -8,9 +8,9 @@ export default function Search() {
   const router  = useRouter()
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    
+    e.preventDefault()
     setSearch('')
-    router.push(`/${search}/`)
+    router.push(`SmallProject/${search}/`)
   }
 
   function handleChange(e: ChangeEvent<HTMLInputElement>) {
@@ -27,7 +27,6 @@ export default function Search() {
         placeholder='Search'
       />
       <button className='bg-slate-300 rounded-xl p-2 ml-2'>🚀</button>
-      
     </form>
   )
 

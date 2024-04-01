@@ -18,11 +18,9 @@ export default function RootLayout({
     <html lang="en">
       <head />
       <body>
-        <header className='bg-slate-400 top-0 h-20 sticky flex items-center justify-center'> Header Section</header> 
-        <main className='p-7'>
+        <main>
           {children}  
         </main>
-        {/* <footer className='bg-slate-400 bottom-0 h-20 sticky flex items-center justify-center'>Footer</footer> */}
       </body>
     </html>
   );

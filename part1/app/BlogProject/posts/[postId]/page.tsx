@@ -34,8 +34,6 @@ export default async function Post({ params }: { params: { postId: string } }) {
   const posts = getSortedPostsData()
   const { postId } = params
 
-  const somevariable = posts
-
   if (!posts.find(post => post.id === postId)) notFound()
 
   const { title, date, contentHtml } = await getPostData(postId)

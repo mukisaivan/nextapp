@@ -1,5 +1,5 @@
 import React from 'react'
-import MyProfilePic from './components/MyProfilePic'
+import Posts from './components/Posts'
 
 type Props = {}
 
@@ -15,7 +15,7 @@ export default function BPPage({}: Props) {
           </span>
         </span> 
       </p>
-      <MyProfilePic/>
+      <Posts />
     </main>
   )
 }

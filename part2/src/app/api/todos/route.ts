@@ -14,10 +14,10 @@ export async  function GET() {
 
 
 export async function POST(req: Request) {
+
   const { userId, title }: Partial<Todo> = await req.json()
   
   if (!userId || !title) return NextResponse.json({ "message": "Missing required data" })
-
 
   const res = await fetch(DATA_SOURCE_URL, {
     method: 'POST',
@@ -38,7 +38,6 @@ export async function PUT(req: Request) {
   const { userId, id, title, completed } = await req.json()
 
   if (!userId || !id || !title || typeof (completed) !== 'boolean') return NextResponse.json({ "message": "Missing required data" })
-
 
   const res = await fetch(`${DATA_SOURCE_URL}/${id}`, {
     method: 'PUT',

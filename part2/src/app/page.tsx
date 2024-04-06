@@ -1,7 +1,17 @@
+import AddTodo from "./components/AddTodo";
+import TodoList from "./components/TodoList";
+
+export const revalidate = 0
+
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>something to test</h1>
+    <main className=''>
+
+      <div className='p-8'>
+        <AddTodo />
+        <TodoList />
+      </div>
     </main>
   );
 }

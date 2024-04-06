@@ -1,12 +1,27 @@
+//  whatever is in the middleware applies to every url path in the site unless if excluded
+
+
 import { NextResponse } from "next/server"
 
 const allowedOrigins = process.env.NODE_ENV === 'production'
     ? ['https://www.yoursite.com', 'https://yoursite.com']
-    : ['http://localhost:3000']
+    : ['http://localhost:3000', 'https://www.google.com']
 
 export function middleware(request: Request) {
 
+    /* other ways to implement middleware 
+
+            const regex = RegExp('/api/*')
+            if (regex.test(request.url)) {
+                // cucstomise the middle ware
+            }
+            if (request.url.includes('/api/*')) {
+                // cucstomise the middle ware
+            }
+    */
+
     const origin = request.headers.get('origin')
+    
     console.log(origin)
 
     if (origin && !allowedOrigins.includes(origin)) {
